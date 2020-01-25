@@ -1,13 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {Text} from 'ink';
+import React from "react"
+import { Text, Color } from "ink"
 
-/// Hello world command
-const Hello = ({name}) => <Text>Hello, {name}</Text>;
+/// Welcome to ink-hn
+const Hello = () => (
+  <Text>
+    Hello, checkout the latest <Color magenta>hackernews </Color>articles !
+  </Text>
+)
 
-Hello.propTypes = {
-	/// Name of the person to greet
-	name: PropTypes.string.isRequired
-};
-
-export default Hello;
+export default Hello

@@ -12,7 +12,7 @@ import opn from "opn"
 import { StoryPreview } from "../components/StoryPreview"
 import Spinner from "ink-spinner"
 
-/// Select command
+/// Select an article to open in your default web browser
 const Select = ({ size }) => {
   const [storiesOptions, setStoriesOptions] = useState([])
   const [highlightedStory, setHighlightedStory] = useState({})
@@ -83,6 +83,7 @@ const Select = ({ size }) => {
 }
 
 Select.propTypes = {
+  ///size of the list to fetch
   size: PropTypes.number
 }
 
